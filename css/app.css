@@ -386,19 +386,64 @@ nav ul {
 }
 /*Contenedor blog*/
 .contenedor-blog{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+   grid-template-columns: 1fr;
     
 }
 
-
 @media (min-width: 768px){
     .contenedor-blog{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 60% 40%;
     }
     
 }
 
+
+@media (min-width: 1444px){
+    .contenedor-blog{
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+    
+}
+
+.articulo-blog img {
+    height: 25rem;
+}
+
+
+@media (min-width: 768px){
+    .articulo-blog img {
+        height:30rem;
+    }
+}
+
+@media (min-width: 1444px){
+    .articulo-blog img {
+        height: 70rem;
+    }
+}
+
+.texto-blog p{
+    margin-bottom: var(--separacion);
+}
+
+.meta-blog{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+
+@media (min-width: 768px){
+    .meta-blog{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+    }
+}
+
+.meta-blog span{
+    color:var(--color-primario);
+    font-weight: bold;
+}
