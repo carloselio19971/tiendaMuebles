@@ -335,3 +335,70 @@ nav ul {
         }
     }
 }
+
+/*Nosotros*/
+
+.sobre-nosotros-pagina{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-nosotros {
+    margin-top: var(--separacion);
+    margin-bottom:var(--separacion);
+}
+
+.texto-nosotros p{
+    margin-top: var(--separacion);
+    font-size: 2rem;
+}
+
+@media (min-width: 768px){
+
+    .sobre-nosotros-pagina{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:5rem;
+    }
+
+    .sobre-nosotros-pagina img{
+        height: 25rem;
+    }
+    .texto-producto{
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .sobre-nosotros-pagina{
+        gap:10rem;
+    }
+
+    .sobre-nosotros-pagina img{
+        height: 40rem;
+    }
+
+    .sobre-nosotros-pagina img{
+        height: 40rem;
+    }
+}
+/*Contenedor blog*/
+.contenedor-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+@media (min-width: 768px){
+    .contenedor-blog{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
+
