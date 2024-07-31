@@ -447,3 +447,115 @@ nav ul {
     color:var(--color-primario);
     font-weight: bold;
 }
+
+.contenedor-galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap:4rem;
+}
+
+
+@media (min-width: 768px){
+    .contenedor-galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:4rem;
+    }
+}
+
+@media (min-width: 1440px){
+    .contenedor-galeria{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:4rem;
+    }
+}
+
+.foto-galeria img {
+    height: 40rem;   
+}
+
+
+.datos{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    
+ }
+
+ .datos:nth-child(1){
+    height:45rem;
+ }
+
+#mensaje{
+   height: 12rem;
+   margin-bottom: 5rem;
+   padding-bottom: 5rem;
+   
+ }
+
+
+ 
+.datos legend{
+    background-color: var(--color-primario);
+    color:var(--color-blanco);
+    width: 100%;
+    height: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+  
+}
+
+.datos .input{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 5rem;
+}
+.input input{
+    height: 6rem;
+}
+
+input[type="radio"] {
+    
+    accent-color: #007bff; /* Cambia el color del radio button */
+    height: 3rem;
+}
+
+fieldset{
+    margin-bottom:var(--separacion);
+}
+
+
+@media (min-width: 768px){
+  
+
+    .datos .input{
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        
+    }
+    .input{
+       margin-top:3rem;
+       font-size: 2.5rem;
+    }
+    
+    input[type="radio"] {
+       
+        accent-color: #007bff; /* Cambia el color del radio button */
+        height: 3rem;
+    }
+
+    #mensaje{
+        height: 10rem;
+        margin-bottom: 5rem;
+        padding-bottom: 5rem;
+        
+      }
+     
+      .datos:nth-child(1){
+        height:60rem;
+     }
+    
+}
+
